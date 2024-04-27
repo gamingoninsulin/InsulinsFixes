@@ -1,0 +1,102 @@
+<!--
+	Created by: GamingOnInsulin
+	Lisence: MIT (all code in this document and or mod you can flreely use!)
+	Website: "https://gamingoninsulin.github.io/"
+	
+	Thanks to "MaxFox_Gaming": "https://www.youtube.com/@MaxFox_Gaming"
+-->
+<configs>
+	
+<!-- Append to recipes -->
+	<append xpath="/recipes"> <!-- Adds any recipes at the bottom of 'Recipes' tag -->
+	
+	<!-- RESOURCES -->
+		<!-- Electicle Parts -->
+		<recipe  name="resourceElectricParts" count="1">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceGlue" count="2"/>
+		</recipe>
+		
+		<!-- Mechanical Parts -->
+		<recipe  name="resourceMechanicalParts" count="1">
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceOil" count="2"/>
+		</recipe>
+		
+		<!-- Acid -->
+		<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceAnimalFat" count="3"/>
+			<ingredient name="foodCropCorn" count="5"/>
+		</recipe>
+		
+	<!-- FILTER -->
+		<recipe name="resourceWaterFilter" count="1" craft_area="workbench" tags="workbenchCrafting, perkAdvancedEngineering">
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceCrushedSand" count="10"/>
+			<ingredient name="resourceCoal" count="4"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceCoal, resourceCrushedSand, resourceCloth"/>
+			</effect_group>
+		</recipe>
+		
+	<!-- FOOD & DRINK -->
+		<!-- Canned Chicken  (FOOD)-->
+		<recipe name="foodCanChicken" count="1" craft_are="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="foodBoiledMeat" count="5"/>
+			<ingredient name="resourceFeather" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodBoiledMeat,"/>
+				<passive_effect name="CraftingIngredientCount" level="3" operation="base_add" value="-2" tags="resourceFeather,"/>
+			</effect_group>
+		</recipe>
+		
+	</append>
+	
+<!-- Append Ingredients -->	
+	<!-- Append 'resourceCloth' to the bedroll recipe. (UPDATE QUEST)-->
+	<append xpath="/recipes/recipe[@name='bedrollBlockVariantHelper']">
+		<ingredient name="resourceCloth" count="5"/>
+	</append>
+	
+	<!-- Append 'cellarDoorDoubleWood' to the bedroll recipe. -->
+	<append xpath="/recipes/recipe[@name='cellarDoorDoubleWood']">
+		<ingredient name="resourceNail" count="12"/>
+		<ingredient name="resourceSpring" count="2"/>
+	</append>
+	
+<!-- Remove Ingredients -->
+	<!-- CarBattery -->
+	<remove xpath="/recipes/recipe[@name='carBattery']/ingredient[@name='resourceScrapPolymers']"/>
+	<!-- chemistryStation -->
+	<remove xpath="/recipes/recipe[@name='chemistryStation']/ingredient[@name='resourceAcid' or @name='toolCookingPot']"/>
+	
+	<!-- Melee Iron Fireaxe and Melee Steel Axe  remove 'resourceLeather' and 'resourceDuctTape'-->
+	<remove xpath="/recipes/recipe[@name='meleeToolAxeT1IronFireaxe' or @name='meleeToolAxeT2SteelAxe']/ingredient[@name='resourceLeather' or @name='resourceDuctTape']"/>
+	
+	<!-- remove resourceGlue form craft_area -> campfire -->
+	<remove xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']" />
+	
+	
+	<!-- Change the Crossbow 'Bolts' to have 'resourceFeathers' insteasd of 'resourceScrapPolymers' -->
+	<!-- Remove the 'resourceScrapPolymers' -->
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP' or @name='ammoCrossbowBoltSteelAP']/ingredient[@name='resourceScrapPolymers']" />
+	<!-- Append the 'resourceFeathers' to the bolts -->
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP' or @name='ammoCrossbowBoltSteelAP']">
+		<ingredient name="resourceFeather" count="4"/>
+	</append>
+	
+	<!-- Change the Crossbow 'Bundle Bolts' to have 'resourceFeathers' insteasd of 'resourceScrapPolymers' -->
+	<!-- Remove the 'resourceScrapPolymers' -->
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltFlaming' or@name='ammoBundleCrossbowBoltExploding']/ingredient[@name='resourceScrapPolymers']" />
+	<!-- Append the 'resourceFeathers' to the 'bundle bolts' -->
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltFlaming' or@name='ammoBundleCrossbowBoltExploding']">
+		<ingredient name="resourceFeather" count="160"/>
+	</append>
+	
+</configs>

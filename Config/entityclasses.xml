@@ -1,0 +1,58 @@
+<Configs>
+	
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group>
+			<passive_effect name="DisableItem" operation="base_set" value="1" tags="ranged">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+			<passive_effect name="DisableItem" operation="base_set" value="1" tags="melee">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+			<passive_effect name="DisableItem" operation="base_set" value="1" tags="weapon">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+				<passive_effect name="GeneralDamageResist" operation="base_add" value="1">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="200" tags="cold,heat,electrical">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="200">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="200" tags="coredamageresist">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="200" tags="heat,electrical">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInfectionCatch,buffInfection01Main,buffInjuryBleeding,buffDrowning01,buffDrowning02,buffArmorShredding,buffLegSprainedFallTrigger,buffLegBroken,buffArmSprained">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryConcussion,buffShocked,buffBurningElement,buffBurningEnvironment,buffBurningFlamingArrow,buffBurningMolotov,buffBurning">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>
+			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect>			
+			<passive_effect name="DismemberChance" operation="base_set" target="selfAOE" range="125" value="0">
+				<requirement name="HasBuff" buff="buffSafeZoneDisplay"/>
+			</passive_effect> 			
+		</effect_group>	
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[contains(@name, 'npcTrader')]">
+		<property name="Buffs" value="buffSafeZoneTrader"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[contains(@name, 'npcTrader')]">
+		<effect_group>
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="buffSafeZoneTrader"/>
+			<triggered_effect trigger="onSelfRespawn" action="AddBuff" buff="buffSafeZoneTrader"/>
+		</effect_group>
+	</append>
+
+</Configs>
