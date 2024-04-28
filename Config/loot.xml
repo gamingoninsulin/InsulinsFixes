@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
-			<item name="resourceScrapTin" count="40,250"/>
-			<item name="resourceScrapAluminium" count="40,250"/>
-			<item name="resourceScrapCopper" count="40,250"/>
+			<item name="resourceScrapTinGOI" count="40,250"/>
+			<item name="resourceScrapAluminiumGOI" count="40,250"/>
+			<item name="resourceScrapCopperGOI" count="40,250"/>
 	</append>
 </configs>

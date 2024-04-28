@@ -1,4 +1,4 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+Key,english
 buffSafeZoneDisplayLeaveTooltip,buffs,Buff,,,"You have left the Safe Zone.",,,,,,,,,,,,,
 
 resourceNutsBoltsGOI, "Nuts and Bolts"
@@ -48,3 +48,6 @@ resourceCopperPlateGOIDesc, "Useful for making advanced Copper items."
 
 resourceGoldPlateGOI, "Gold Plate"
 resourceGoldPlateGOIDesc, "Useful for making advanced Gold items."
+
+resourceBronzePlateGOI, "Bronze Plate"
+resourceBronzePlateGOIDesc, "Useful for making advanced Bronze items."
