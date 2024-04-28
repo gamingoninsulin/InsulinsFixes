@@ -1,2 +1,5 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
 buffSafeZoneDisplayLeaveTooltip,buffs,Buff,,,"You have left the Safe Zone.",,,,,,,,,,,,,
+
+resourcNutsBoltsGOI, "Nuts and Bolts"
+resourcNutsBoltsGOIDesc, "Nuts and Bolts useful for making some more complicated items."
