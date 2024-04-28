@@ -1,5 +1,29 @@
+<!--
+	Created by: GamingOnInsulin
+	Lisence: MIT (all code in this document and or mod you can flreely use!)
+	Website: "https://gamingoninsulin.github.io/GamingOnInsulin"
+	
+	Thanks to "MaxFox_Gaming": "https://www.youtube.com/@MaxFox_Gaming"
+	
+	Comments:
+	xpath = /items/item
+	
+-->
 <configs>
 
-
-
+<!-- Nuts & Bolts -->
+	<append xpath="/items">
+		<item name="resourcNutsBoltsGOI">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="25"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/><!-- 10 nuts and bolts are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="200"/>
+		</item>
+	</append>
 </configs>
