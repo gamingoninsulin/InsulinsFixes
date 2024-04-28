@@ -11,9 +11,10 @@
 -->
 <configs>
 
-<!-- Nuts & Bolts -->
+<!-- Bits And Bobs -->
+	<!-- Nuts & Bolts -->
 	<append xpath="/items">
-		<item name="resourcNutsBoltsGOI">
+		<item name="resourceNutsBoltsGOI">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -21,6 +22,258 @@
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> <!-- the duke coins  -->
 			<property name="EconomicBundleSize" value="10"/><!-- 10 nuts and bolts are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="200"/>
+		</item>
+<!-- SCRAP -->
+		<item name="resourceScrapTinGOI"> <!-- scrap material -->
+			<property name="Tags" value="brass"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapBrassSmall"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="6000"/>
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="20"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/>"/><!-- 10 Tin Bars are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="CraftingIngredientTime" value=".2"/>
+		</item>
+		
+		<item name="unit_tin">
+			<property name="Extends" value="unit_iron"/>
+			<property name="CustomIcon" value="resourceScrapBrass"/>
+			<property name="Material" value="Mtin"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="CreativeMode" value="None"/>
+		</item>
+		
+		<item name="resourceScrapAluminiumGOI"> <!-- scrap material -->
+			<property name="Tags" value="brass"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapBrassSmall"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="6000"/>
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="20"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/>"/><!-- 10 Tin Bars are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="CraftingIngredientTime" value=".2"/>
+		</item>
+		
+		<item name="unit_aluminium">
+			<property name="Extends" value="unit_iron"/>
+			<property name="CustomIcon" value="resourceScrapBrass"/>
+			<property name="Material" value="Maluminium"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="CreativeMode" value="None"/>
+		</item>
+		
+		<item name="resourceScrapCopperGOI"> <!-- scrap material -->
+			<property name="Tags" value="brass"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapBrassSmall"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="6000"/>
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="20"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/>"/><!-- 10 Tin Bars are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="CraftingIngredientTime" value=".2"/>
+		</item>
+		
+		<item name="unit_copper">
+			<property name="Extends" value="unit_iron"/>
+			<property name="CustomIcon" value="resourceScrapBrass"/>
+			<property name="Material" value="Mcopper"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="CreativeMode" value="None"/>
+		</item>
+
+<!-- BARS -->		
+		<item name="resourceForgedTinGOI">
+			<property name="CustomIconTint" value="c2d6d6"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceForgedIron"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="25"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/><!-- 10 Tin Bars are 25 duke coins -->
+			<property name="CraftingIngredientTime" value="10"/>
+			<property name="RepairTime" value=".5"/>
+			<property name="RepairAmount" value="270"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="resourceForgedAluminiumGOI">
+			<property name="CustomIconTint" value="c2d6d6"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceForgedIron"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="25"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/><!-- 10 Aluminium Bars are 25 duke coins -->
+			<property name="CraftingIngredientTime" value="10"/>
+			<property name="RepairTime" value=".5"/>
+			<property name="RepairAmount" value="270"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="resourceForgedBrassGOI">
+			<property name="CustomIconTint" value="c2d6d6"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceForgedIron"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="25"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/><!-- 10 Brass Bars are 25 duke coins -->
+			<property name="CraftingIngredientTime" value="10"/>
+			<property name="RepairTime" value=".5"/>
+			<property name="RepairAmount" value="270"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="resourceForgedCopperGOI">
+			<property name="CustomIconTint" value="c2d6d6"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceForgedIron"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="25"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/><!-- 10 Copper Bars are 25 duke coins -->
+			<property name="CraftingIngredientTime" value="10"/>
+			<property name="RepairTime" value=".5"/>
+			<property name="RepairAmount" value="270"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="resourceForgedGoldGOI">
+			<property name="CustomIconTint" value="c2d6d6"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceForgedIron"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="25"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/><!-- 10 Copper Bars are 25 duke coins -->
+			<property name="CraftingIngredientTime" value="10"/>
+			<property name="RepairTime" value=".5"/>
+			<property name="RepairAmount" value="270"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="resourceForgedBronzeGOI">
+			<property name="CustomIconTint" value="c2d6d6"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceForgedIron"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="25"/> <!-- the duke coins  -->
+			<property name="EconomicBundleSize" value="10"/><!-- 10 Copper Bars are 25 duke coins -->
+			<property name="CraftingIngredientTime" value="10"/>
+			<property name="RepairTime" value=".5"/>
+			<property name="RepairAmount" value="270"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+<!-- PLATES -->
+		<item name="resourceTinPlateGOI">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteal"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="45"/> <!-- the duke coins  -->
+			<!--<property name="EconomicBundleSize" value="10"/>--><!-- 10 nuts and bolts are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="200"/>
+		</item>
+		
+		<item name="resourceAluminiumPlateGOI">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteal"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="45"/> <!-- the duke coins  -->
+			<!--<property name="EconomicBundleSize" value="10"/>--><!-- 10 nuts and bolts are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="200"/>
+		</item>
+		
+		<item name="resourceIronPlateGOI">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteal"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="45"/> <!-- the duke coins  -->
+			<!--<property name="EconomicBundleSize" value="10"/>--><!-- 10 nuts and bolts are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="200"/>
+		</item>
+		
+		<item name="resourceBrassPlateGOI">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteal"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="45"/> <!-- the duke coins  -->
+			<!--<property name="EconomicBundleSize" value="10"/>--><!-- 10 nuts and bolts are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="200"/>
+		</item>
+		
+		<item name="resourceCopperPlateGOI">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteal"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="45"/> <!-- the duke coins  -->
+			<!--<property name="EconomicBundleSize" value="10"/>--><!-- 10 nuts and bolts are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="200"/>
+		</item>
+		
+		<item name="resourceGoldPlateGOI">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteal"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="45"/> <!-- the duke coins  -->
+			<!--<property name="EconomicBundleSize" value="10"/>--><!-- 10 nuts and bolts are 25 duke coins -->
+			<property name="Group" value="Resources"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="200"/>
+		</item>
+		
+		<item name="resourceBronzePlateGOI">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteal"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="45"/> <!-- the duke coins  -->
+			<!--<property name="EconomicBundleSize" value="10"/>--><!-- 10 nuts and bolts are 25 duke coins -->
 			<property name="Group" value="Resources"/>
 			<property name="RepairTime" value="1"/>
 			<property name="RepairAmount" value="200"/>

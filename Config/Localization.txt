@@ -1,5 +1,50 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
 buffSafeZoneDisplayLeaveTooltip,buffs,Buff,,,"You have left the Safe Zone.",,,,,,,,,,,,,
 
-resourcNutsBoltsGOI, "Nuts and Bolts"
-resourcNutsBoltsGOIDesc, "Nuts and Bolts useful for making some more complicated items."
+resourceNutsBoltsGOI, "Nuts and Bolts"
+resourceNutsBoltsGOIDesc, "Nuts and Bolts useful for making some more complicated items."
+
+resourceMetalPlateGOI, "Metal Plate"
+resourceMetalPlateGOIDesc, "Metal Plate is useful for more complicated items."
+
+resourceScrapTinGOI, "Scrap Tin"
+resourceScrapTinGOIDesc, "Some valueble Tin Scrap useful for smelting in tin bars."
+
+resourceScrapAluminiumGOI, "Scrap Aluminium"
+resourceScrapAluminiumGOIDesc, "Some valueble Aluminium Scrap useful for smelting in Aluminium bars."
+
+resourceScrapCopperGOI, "Scrap Copper"
+resourceScrapCopperGOIDesc, "Some valueble Copper Scrap useful for smelting in Copper bars."
+
+resourceForgedTinGOI, "Forged Tin"
+resourceForgedTinGOIDesc, "Useful for crafting Tin stuff or mixing with other ingot in a forge."
+
+resourceForgedAluminiumGOI, "Forged Aluminium"
+resourceForgedAluminiumGOIDesc, "Useful for crafting Aluminium stuff or mixing with other ingot in a forge."
+
+resourceForgedBrassGOI, "Forged Brass"
+resourceForgedBrassGOIDesc, "Useful for crafting Brass stuff or mixing with other ingot in a forge."
+
+resourceForgedCopperGOI, "Forged Copper"
+resourceForgedCopperGOIDesc, "Useful for crafting Copper stuff or mixing with other ingot in a forge."
+
+resourceForgedGoldGOI, "Forged Gold"
+resourceForgedGoldGOIDesc, "Useful for crafting Gold stuff or mixing with other ingot in a forge."
+
+resourceTinPlateGOI, "Tin Plate"
+resourceTinPlateGOIDesc, "Useful for making advanced Tin items."
+
+resourceAluminiumPlateGOI, "Aluminium Plate"
+resourceAluminiumPlateGOIDesc, "Useful for making advanced Aluminium items."
+
+resourceBrassPlateGOI, "Brass Plate"
+resourceBrassPlateGOIDesc, "Useful for making advanced Brass items."
+
+resourceIronPlateGOI, "Iron Plate"
+resourceIronPlateGOIDesc, "Useful for making advanced Iron items."
+
+resourceCopperPlateGOI, "Copper Plate"
+resourceCopperPlateGOIDesc, "Useful for making advanced Copper items."
+
+resourceGoldPlateGOI, "Gold Plate"
+resourceGoldPlateGOIDesc, "Useful for making advanced Gold items."
