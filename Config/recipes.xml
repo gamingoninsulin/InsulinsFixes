@@ -41,7 +41,8 @@
 		<!-- Electicle Parts -->
 			<recipe name="resourceElectricParts" count="1">
 				<ingredient name="resourceForgedIron" count="2"/>
-				<ingredient name="resourceScrapPolymers" count="5"/>
+				<ingredient name="resourceIronPlateGOI" count="4"/>
+				<ingredient name="resourcePlasticBoardGOI" count="5"/>
 				<ingredient name="resourceNutsBoltsGOI" count="5"/>
 			</recipe>
 	

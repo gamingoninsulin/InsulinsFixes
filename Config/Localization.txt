@@ -51,3 +51,6 @@ resourceGoldPlateGOIDesc, "Useful for making advanced Gold items."
 
 resourceBronzePlateGOI, "Bronze Plate"
 resourceBronzePlateGOIDesc, "Useful for making advanced Bronze items."
+
+resourcePlasticBoardGOI, "Sturdy Plastic Sheet"
+resourcePlasticBoardGOIDesc, "Some Strudy green plastic could be useful for crafting componetents like a Car Battery..."
