@@ -19,18 +19,6 @@
 			<property name="Experience" value="200"/>
 		</material>
 		
-		<material id="Mtin">
-			<property name="damage_category" value="metal"/>
-			<property name="surface_category" value="metal"/>
-			<property name="forge_category" value="tin"/>
-			<property name="Hardness" type="float" value="1"/>
-			<property name="stepsound" value="metal"/>
-			<property name="stability_glue" value="300"/>
-			<property name="Mass" type="int" value="20"/>
-			<property name="MaxDamage" value="200"/>
-			<property name="Experience" value="2"/>
-		</material>
-		
 		<material id="MresourceScrapAluminiumSmall">
 			<property name="damage_category" value="metal"/>
 			<property name="surface_category" value="metal"/>
@@ -49,19 +37,7 @@
 			<property name="forge_category" value="aluminium"/>
 			<property name="Experience" value="200"/>
 		</material>
-		
-		<material id="Maluminium">
-			<property name="damage_category" value="metal"/>
-			<property name="surface_category" value="metal"/>
-			<property name="forge_category" value="aluminium"/>
-			<property name="Hardness" type="float" value="1"/>
-			<property name="stepsound" value="metal"/>
-			<property name="stability_glue" value="300"/>
-			<property name="Mass" type="int" value="20"/>
-			<property name="MaxDamage" value="200"/>
-			<property name="Experience" value="2"/>
-		</material>
-		
+
 		<material id="MresourceScrapCopperSmall">
 			<property name="damage_category" value="metal"/>
 			<property name="surface_category" value="metal"/>
@@ -81,6 +57,32 @@
 			<property name="Experience" value="200"/>
 		</material>
 		
+		
+		
+		<material id="Mtin">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="tin"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Experience" value="2"/>
+		</material>
+		
+		<material id="Maluminium">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="aluminium"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Experience" value="2"/>
+		</material>
+		
 		<material id="Mcopper">
 			<property name="damage_category" value="metal"/>
 			<property name="surface_category" value="metal"/>
@@ -92,5 +94,31 @@
 			<property name="MaxDamage" value="200"/>
 			<property name="Experience" value="2"/>
 		</material>
+		
+		<material id="Mbronze">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="bronze"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Experience" value="2"/>
+		</material>
+		
+		<material id="Mgold">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="gem"/>
+			<property name="forge_category" value="gold"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Experience" value="2"/>
+		</material>
+		
+	
 	</append>
 </configs>

@@ -30,7 +30,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mtin"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<property name="EconomicBundleSize" value="40"/>
@@ -43,7 +43,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Maluminium"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<property name="EconomicBundleSize" value="40"/>
@@ -56,7 +56,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mcopper"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<property name="EconomicBundleSize" value="40"/>
@@ -70,7 +70,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mtin"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -83,7 +83,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Maluminium"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -96,7 +96,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mbrass"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -109,7 +109,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mcopper"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -122,7 +122,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mgold"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -135,7 +135,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mbronze"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -149,7 +149,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mtin"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="45"/>
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -162,7 +162,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Maluminium"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="45"/>
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -175,7 +175,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mmetal"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="45"/>
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -201,7 +201,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mcopper"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="45"/>
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -214,7 +214,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mgold"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="45"/>
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -227,7 +227,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mbronze"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="45"/>
 			<!--<property name="EconomicBundleSize" value="10"/>-->
@@ -236,6 +236,7 @@
 			<property name="RepairAmount" value="200"/>
 		</item>
 		
+	<!-- Plastic -->
 		<item name="resourcePlasticBoardGOI">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
@@ -249,5 +250,7 @@
 			<property name="RepairAmount" value="100"/>
 		</item>
 	</append>
+	<!-- sets the name of the gold nugget. -->
+	<setattribute xpath="items/item[@name='resourceGoldNugget']" name="value">DescGoldOre</setattribute>
 </configs>
 

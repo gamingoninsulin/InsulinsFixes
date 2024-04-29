@@ -111,7 +111,7 @@
 			</recipe>
 			
 			<recipe name="resourceForgedGoldGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
-				<ingredient name="resourceGoldNugget" count="20"/>
+				<ingredient name="resourceDoorKnob" count="20"/>
 				<ingredient name="unit_clay" count="5"/>
 				<effect_group>
 					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceGoldNugget"/>
