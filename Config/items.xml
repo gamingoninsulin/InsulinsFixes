@@ -10,9 +10,73 @@
 	
 -->
 <configs>
-<!-- Bits And Bobs -->
-	<!-- Nuts & Bolts -->
+	
+	<append xpath="/items/item[@name='foodCanBeef']/property[@class='Action0']">
+		<property name="Create_item" value="drinkCanEmpty"/>
+	</append>
+	
+	<insertafter xpath="/items/item[@name='foodCropPumpkin']">
+		<item name="drinkCanEmpty">
+			<property name="HoldType" value="14"/>
+			<property name="Meshfile" value="@:Other/Items/Food/can_emptyPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="CraftingIngredientTime" value="9"/>
+			<property name="Group" value="Resources"/>
+		</item>
+	</insertafter>
+	
 	<append xpath="/items">
+<!-- Canned Stuff -->			
+		<item name="cannedSoyBeansGOI">
+			<property name="Extends" value="foodCanBeef"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		
+		<item name="cannedBeansGOI">
+			<property name="Extends" value="foodCanBeef"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		
+		<item name="cannedCornGOI">
+			<property name="Extends" value="foodCanBeef"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		
+		<item name="cannedPeachesGOI">
+			<property name="Extends" value="foodCanBeef"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		
+		<item name="cannedTomatoSauceGOI">
+			<property name="Extends" value="foodCanBeef"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		
+		
+<!-- Resources -->
 		<item name="resourceNutsBoltsGOI">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
@@ -25,232 +89,32 @@
 			<property name="RepairTime" value="1"/>
 			<property name="RepairAmount" value="200"/>
 		</item>
-<!-- SCRAP -->
-		<item name="resourceScrapTinGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mtin"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<property name="EconomicBundleSize" value="40"/>
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceScrapAluminiumGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Maluminium"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<property name="EconomicBundleSize" value="40"/>
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceScrapCopperGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mcopper"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<property name="EconomicBundleSize" value="40"/>
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-<!-- BARS -->		
-		<item name="resourceForgedTinGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mtin"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceForgedAluminiumGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Maluminium"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceForgedBrassGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mbrass"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceForgedCopperGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mcopper"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceForgedGoldGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mgold"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceForgedBronzeGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mbronze"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="25"/> 
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-<!-- PLATES -->
-		<item name="resourceTinPlateGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mtin"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="45"/>
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceAluminiumPlateGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Maluminium"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="45"/>
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
 		
 		<item name="resourceIronPlateGOI">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="45"/>
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceBrassPlateGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mmetal_weak"/>
 			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="45"/>
-			<!--<property name="EconomicBundleSize" value="10"/>-->
+			<property name="EconomicValue" value="25"/> 
+			<property name="EconomicBundleSize" value="10"/>
 			<property name="Group" value="Resources"/>
 			<property name="RepairTime" value="1"/>
 			<property name="RepairAmount" value="200"/>
 		</item>
 		
-		<item name="resourceCopperPlateGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mcopper"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="45"/>
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceGoldPlateGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mgold"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="45"/>
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-		<item name="resourceBronzePlateGOI">
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mbronze"/>
-			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="45"/>
-			<!--<property name="EconomicBundleSize" value="10"/>-->
-			<property name="Group" value="Resources"/>
-			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="200"/>
-		</item>
-		
-	<!-- Plastic -->
 		<item name="resourcePlasticBoardGOI">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="MplasticGOI"/>
 			<property name="Stacknumber" value="500"/>
-			<property name="EconomicValue" value="30"/>
-			<property name="EconomicBundleSize" value="25"/>
+			<property name="EconomicValue" value="25"/> 
+			<property name="EconomicBundleSize" value="10"/>
 			<property name="Group" value="Resources"/>
 			<property name="RepairTime" value="1"/>
-			<property name="RepairAmount" value="100"/>
+			<property name="RepairAmount" value="200"/>
 		</item>
 	</append>
-	<!-- Chnange the Material to 'Mgold' -->
-	<setattribute xpath="/items/item[@name='resourceDoorKnob']/property[@name='Material']" name="value">Mgold</setattribute>
 </configs>
 

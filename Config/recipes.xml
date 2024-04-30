@@ -26,7 +26,57 @@
 			<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltFlaming' or@name='ammoBundleCrossbowBoltExploding']/ingredient[@name='resourceScrapPolymers']" />
 			
 		<append xpath="/recipes">
-	<!-- ### Add recipes for 'new' Items ### -->
+	<!-- ### FOOD & DRINK ### -->
+		<!-- canned 'SOY BEANS' -->
+			<recipe name="cannedSoyBeansGOI" count="1" craft_are="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+				<ingredient name="drinkCanEmpty" count="1"/>
+				<ingredient name="drinkJarBoiledWater" count="1"/>
+				<ingredient name="Soy Bean" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="Soy Bean"/>
+				</effect_group>
+			</recipe>
+			
+		<!-- canned 'PEACH' -->
+			<recipe name="cannedPeachesGOI" count="1" craft_are="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+				<ingredient name="drinkCanEmpty" count="1"/>
+				<ingredient name="drinkJarBoiledWater" count="1"/>
+				<ingredient name="Peach" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="Peach"/>
+				</effect_group>
+			</recipe>
+			
+		<!-- canned 'BEANS (peas)' -->
+			<recipe name="cannedBeansGOI" count="1" craft_are="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+				<ingredient name="drinkCanEmpty" count="1"/>
+				<ingredient name="drinkJarBoiledWater" count="1"/>
+				<ingredient name="Peas" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="Peas"/>
+				</effect_group>
+			</recipe>
+			
+		<!-- canned 'CORN' -->
+			<recipe name="cannedCornGOI" count="1" craft_are="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+				<ingredient name="drinkCanEmpty" count="1"/>
+				<ingredient name="drinkJarBoiledWater" count="1"/>
+				<ingredient name="foodCornOnTheCob" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodCornOnTheCob"/>
+				</effect_group>
+			</recipe>
+			
+		<!-- Canned 'CHICKEN' -->
+			<recipe name="foodCanChicken" count="1" craft_are="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+				<ingredient name="drinkCanEmpty" count="1"/>
+				<ingredient name="drinkJarBoiledWater" count="1"/>
+				<ingredient name="foodBoiledMeat" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodBoiledMeat"/>
+				</effect_group>
+			</recipe>
+			
 	<!-- ### RESOURCES ### -->
 		<!-- Nuts And Bolts --> <!-- MODDED -->
 			<recipe name="resourceNutsBoltsGOI" count="1" craft_area="forge" material_based="true" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
@@ -64,88 +114,8 @@
 					<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceCoal, resourceCrushedSand, resourceCloth"/>
 				</effect_group>
 			</recipe>
-		
-	<!-- ### FOOD & DRINK ### -->
-		<!-- Canned Chicken -->
-			<recipe name="foodCanChicken" count="1" craft_are="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-				<ingredient name="drinkJarBoiledWater" count="1"/>
-				<ingredient name="foodBoiledMeat" count="5"/>
-				<ingredient name="resourceFeather" count="2"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodBoiledMeat,"/>
-					<passive_effect name="CraftingIngredientCount" level="3" operation="base_add" value="-2" tags="resourceFeather,"/>
-				</effect_group>
-			</recipe>
-		
-	<!-- FORGE 'new' Recipes -->
-		<!-- Bars -->
-			<recipe name="resourceForgedTinGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceScrapTinGOI" count="10"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceScrapTinGOI"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceForgedAluminiumGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceScrapAluminiumGOI" count="10"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceScrapAluminiumGOI"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceForgedBrassGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceTrophy1" count="10"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" craft_tool="toolForgeCrucible" tags="unit_clay,resourceTrophy1"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceForgedCopperGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
-				<ingredient name="resourceScrapCopperGOI" count="10"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceScrapCopperGOI"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceForgedGoldGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceDoorKnob" count="20"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceGoldNugget"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceForgedBronzeGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceForgedTinGOI" count="5"/>
-				<ingredient name="resourceForgedAluminiumGOI" count="5"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedTinGOI,resourceForgedAluminiumGOI"/>
-				</effect_group>
-			</recipe>
+
 		<!-- Plates -->
-			<recipe name="resourceTinPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceForgedTinGOI" count="2"/>
-				<ingredient name="resourceNutsBoltsGOI" count="4"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedTinGOI"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceAluminiumPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceScrapAluminiumGOI" count="2"/>
-				<ingredient name="resourceNutsBoltsGOI" count="4"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceScrapAluminiumGOI"/>
-				</effect_group>
-			</recipe>
-			
 			<recipe name="resourceIronPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
 				<ingredient name="resourceForgedIron" count="2"/>
 				<ingredient name="resourceNutsBoltsGOI" count="4"/>
@@ -155,43 +125,7 @@
 				</effect_group>
 			</recipe>
 			
-			<recipe name="resourceBrassPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceForgedBrassGOI" count="2"/>
-				<ingredient name="resourceNutsBoltsGOI" count="4"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedBrassGOI"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceCopperPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceForgedCopperGOI" count="2"/>
-				<ingredient name="resourceNutsBoltsGOI" count="4"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedCopperGOI"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceGoldPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceForgedGoldGOI" count="2"/>
-				<ingredient name="resourceNutsBoltsGOI" count="4"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedGoldGOI"/>
-				</effect_group>
-			</recipe>
-			
-			<recipe name="resourceBronzePlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
-				<ingredient name="resourceForgedBronzeGOI" count="2"/>
-				<ingredient name="resourceNutsBoltsGOI" count="4"/>
-				<ingredient name="unit_clay" count="5"/>
-				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedBronzeGOI"/>
-				</effect_group>
-			</recipe>
-			
-	<!-- CHEMISTRY STATION -->
+	<!-- ### CHEMISTRY STATION ### -->
 		<!-- Plastic -->
 			<recipe name="resourcePlasticBoardGOI" count="1" material_based="true" craft_area="chemistryStation" is_trackable="false" tags="perkAdvancedEngineering">
 				<ingredient name="resourceScrapPolymers" count="20"/>
@@ -234,11 +168,5 @@
 
 <!-- @Turned Off!
 
-	<!-/-#Acid -/-> 
-	<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceAnimalFat" count="3"/>
-		<ingredient name="foodCropCorn" count="5"/>
-	</recipe>
 -->
 		

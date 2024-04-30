@@ -1,74 +1,32 @@
 Key,english
-buffSafeZoneDisplayLeaveTooltip,buffs,Buff,,,"You have left the Safe Zone.",,,,,,,,,,,,,
 
 
 
-	resourceNutsBoltsGOI, "Nuts and Bolts"
-	resourceNutsBoltsGOIDesc, "Nuts and Bolts useful for making some more complicated items."
+emptyCanGOI, "Empty Can"
+emptyCanGOIDesc, "Emty Can is used for crafting canned food."
+
+cannedTomatoSauceGOI, "Canned Tomato Sauce"
+cannedTomatoSauceGOIDesc, "Canned Tomato Sauce is useful for cooking."
+
+cannedPeachesGOI, "Canned Peaches"
+cannedPeachesGOIDesc, "Canned Peaches is useful for cooking."
+
+cannedCornGOI, "Canned Corn"
+cannedCornGOIDesc, "Canned Corn is useful for cooking."
+
+cannedBeansGOI, "Canned Peas"
+cannedBeansGOIDesc, "Canned Peas is useful for cooking."
+
+cannedSoyBeansGOI, "Canned Soy Beans"
+cannedSoyBeansGOIDesc, "Canned Soy Beans is useful for cooking."
 
 
 
-resourceScrapTinGOI, "Scrap Tin"
-resourceScrapTinGOIDesc, "Some valueble Tin Scrap useful for smelting in tin bars."
-
-resourceForgedTinGOI, "Forged Tin"
-resourceForgedTinGOIDesc, "Useful for crafting Tin stuff or mixing with other ingot in a forge."
-
-resourceTinPlateGOI, "Tin Plate"
-resourceTinPlateGOIDesc, "Useful for making advanced Tin items."
-
-
-
-	resourceScrapAluminiumGOI, "Scrap Aluminium"
-	resourceScrapAluminiumGOIDesc, "Some valueble Aluminium Scrap useful for smelting in Aluminium bars."
-
-	resourceForgedAluminiumGOI, "Forged Aluminium"
-	resourceForgedAluminiumGOIDesc, "Useful for crafting Aluminium stuff or mixing with other ingot in a forge."
-
-	resourceAluminiumPlateGOI, "Aluminium Plate"
-	resourceAluminiumPlateGOIDesc, "Useful for making advanced Aluminium items."
-
-
-
-resourceScrapCopperGOI, "Scrap Copper"
-resourceScrapCopperGOIDesc, "Some valueble Copper Scrap useful for smelting in Copper bars."
-
-resourceForgedCopperGOI, "Forged Copper"
-resourceForgedCopperGOIDesc, "Useful for crafting Copper stuff or mixing with other ingot in a forge."
-
-resourceCopperPlateGOI, "Copper Plate"
-resourceCopperPlateGOIDesc, "Useful for making advanced Copper items."
-
-
-
-	resourceForgedBronzeGOI, "Forged Bronze"
-	resourceForgedBronzeGOIDesc, "Useful for crafting Bronze stuff or mixing with other ingot in a forge."
-
-	resourceBronzePlateGOI, "Bronze Plate"
-	resourceBronzePlateGOIDesc, "Useful for making advanced Bronze items."
-
-
-
-resourceForgedBrassGOI, "Forged Brass"
-resourceForgedBrassGOIDesc, "Useful for crafting Brass stuff or mixing with other ingot in a forge."
-
-resourceBrassPlateGOI, "Brass Plate"
-resourceBrassPlateGOIDesc, "Useful for making advanced Brass items."
-
-
-	DescGoldOre, "Gold Nugget"
-	resourceForgedGoldGOI, "Forged Gold"
-	resourceForgedGoldGOIDesc, "Useful for crafting Gold stuff or mixing with other ingot in a forge."
-
-	resourceGoldPlateGOI, "Gold Plate"
-	resourceGoldPlateGOIDesc, "Useful for making advanced Gold items."
-
-
+resourceNutsBoltsGOI, "Nuts and Bolts"
+resourceNutsBoltsGOIDesc, "handy stuff for fasten thing togehter."
 
 resourceIronPlateGOI, "Iron Plate"
-resourceIronPlateGOIDesc, "Useful for making advanced Iron items."
+resourceIronPlateGOIDesc, "Iron Plate is useful for makikng e.g.'Water Fillter' for the 'Dew Collector'"
 
-
-
-	resourcePlasticBoardGOI, "Sturdy Plastic Sheet"
-	resourcePlasticBoardGOIDesc, "Some Strudy green plastic could be useful for crafting componetents like a Car Battery..."
+resourcePlasticBoardGOI, "Plastic Sheet"
+resourcePlasticBoardGOIDesc, "a sturdy Plastic Sheet."

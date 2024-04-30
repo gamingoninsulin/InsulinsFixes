@@ -1,26 +1,3 @@
 <Configs>
 
-<append xpath="/buffs">
-	<buff name="buffSafeZoneDisplay" name_key="Safe Zone" description_key="While in this area you can't attack or be harmed" tooltip_key="You have entered a Safe Zone" icon="ui_game_symbol_add" icon_color="0,255,0" icon_blink="true" remove_on_death="true">
-		<display_value_key value="Safe Zone"/> <display_value value="xxx"/>		
-		<stack_type value="replace"/>		
-		<duration value="1"/>
-		<update_rate value=".1"/>
-		
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffRemove" action="ShowToolbeltMessage" message_key="buffSafeZoneDisplayLeaveTooltip"/>
-		</effect_group>
-	</buff>
-	
-	<buff name="buffSafeZoneTrader" hidden="true">
-		<stack_type value="ignore"/>
-		<update_rate value=".1"/>
-		
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" target="selfAOE" target_tags="zombie,animal" range="50" stat="Health" operation="subtract" value="99999"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" target_tags="player" range="50" buff="buffSafeZoneDisplay"/>
-		</effect_group>
-	</buff>
-</append>
-
 </Configs>
