@@ -77,8 +77,9 @@
 				</effect_group>
 			</recipe>
 		
-		<!-- FORGE 'new' Recipes -->
-			<recipe name="resourceForgedTinGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+	<!-- FORGE 'new' Recipes -->
+		<!-- Bars -->
+			<recipe name="resourceForgedTinGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
 				<ingredient name="resourceScrapTinGOI" count="10"/>
 				<ingredient name="unit_clay" count="5"/>
 				<effect_group>
@@ -86,7 +87,7 @@
 				</effect_group>
 			</recipe>
 			
-			<recipe name="resourceForgedAluminiumGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+			<recipe name="resourceForgedAluminiumGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
 				<ingredient name="resourceScrapAluminiumGOI" count="10"/>
 				<ingredient name="unit_clay" count="5"/>
 				<effect_group>
@@ -94,11 +95,11 @@
 				</effect_group>
 			</recipe>
 			
-			<recipe name="resourceForgedBrassGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+			<recipe name="resourceForgedBrassGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
 				<ingredient name="resourceTrophy1" count="10"/>
 				<ingredient name="unit_clay" count="5"/>
 				<effect_group>
-					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceTrophy1"/>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" craft_tool="toolForgeCrucible" tags="unit_clay,resourceTrophy1"/>
 				</effect_group>
 			</recipe>
 			
@@ -110,7 +111,7 @@
 				</effect_group>
 			</recipe>
 			
-			<recipe name="resourceForgedGoldGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+			<recipe name="resourceForgedGoldGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
 				<ingredient name="resourceDoorKnob" count="20"/>
 				<ingredient name="unit_clay" count="5"/>
 				<effect_group>
@@ -118,7 +119,7 @@
 				</effect_group>
 			</recipe>
 			
-			<recipe name="resourceForgedBronzeGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+			<recipe name="resourceForgedBronzeGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
 				<ingredient name="resourceForgedTinGOI" count="5"/>
 				<ingredient name="resourceForgedAluminiumGOI" count="5"/>
 				<ingredient name="unit_clay" count="5"/>
@@ -126,8 +127,81 @@
 					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedTinGOI,resourceForgedAluminiumGOI"/>
 				</effect_group>
 			</recipe>
-		
+		<!-- Plates -->
+			<recipe name="resourceTinPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+				<ingredient name="resourceForgedTinGOI" count="2"/>
+				<ingredient name="resourceNutsBoltsGOI" count="4"/>
+				<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedTinGOI"/>
+				</effect_group>
+			</recipe>
+			
+			<recipe name="resourceAluminiumPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+				<ingredient name="resourceScrapAluminiumGOI" count="2"/>
+				<ingredient name="resourceNutsBoltsGOI" count="4"/>
+				<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceScrapAluminiumGOI"/>
+				</effect_group>
+			</recipe>
+			
+			<recipe name="resourceIronPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+				<ingredient name="resourceForgedIron" count="2"/>
+				<ingredient name="resourceNutsBoltsGOI" count="4"/>
+				<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedIron"/>
+				</effect_group>
+			</recipe>
+			
+			<recipe name="resourceBrassPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+				<ingredient name="resourceForgedBrassGOI" count="2"/>
+				<ingredient name="resourceNutsBoltsGOI" count="4"/>
+				<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedBrassGOI"/>
+				</effect_group>
+			</recipe>
+			
+			<recipe name="resourceCopperPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+				<ingredient name="resourceForgedCopperGOI" count="2"/>
+				<ingredient name="resourceNutsBoltsGOI" count="4"/>
+				<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedCopperGOI"/>
+				</effect_group>
+			</recipe>
+			
+			<recipe name="resourceGoldPlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+				<ingredient name="resourceForgedGoldGOI" count="2"/>
+				<ingredient name="resourceNutsBoltsGOI" count="4"/>
+				<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedGoldGOI"/>
+				</effect_group>
+			</recipe>
+			
+			<recipe name="resourceBronzePlateGOI" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+				<ingredient name="resourceForgedBronzeGOI" count="2"/>
+				<ingredient name="resourceNutsBoltsGOI" count="4"/>
+				<ingredient name="unit_clay" count="5"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceForgedBronzeGOI"/>
+				</effect_group>
+			</recipe>
+			
+	<!-- CHEMISTRY STATION -->
+		<!-- Plastic -->
+			<recipe name="resourcePlasticBoardGOI" count="1" material_based="true" craft_area="chemistryStation" is_trackable="false" tags="perkAdvancedEngineering">
+				<ingredient name="resourceScrapPolymers" count="20"/>
+				<ingredient name="unit_clay" count="10"/>
+				<effect_group>
+					<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,resourceScrapPolymers"/>
+				</effect_group>
+			</recipe>
 		</append>
+		
 		<!-- Add nuts and bolts to the tool fire axe and steel tool axe -->
 			<append xpath="/recipes/recipe[@name='meleeToolAxeT1IronFireaxe' or @name='meleeToolAxeT2SteelAxe']">
 				<ingredient name="resourceNutsBoltsGOI" count="6"/>
@@ -145,6 +219,11 @@
 		<!-- Append the 'resourceFeathers' to the BUNDLE bolts -->
 			<append xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltFlaming' or@name='ammoBundleCrossbowBoltExploding']">
 				<ingredient name="resourceFeather" count="160"/>
+			</append>
+			
+			<!-- append 'resourcePlasticBoardGOI' to the junk recipes. -->
+			<append xpath="/recipes/recipe[starts-with(@name,'gunBot')]">
+				<ingredient name="resourcePlasticBoardGOI" count="10"/>
 			</append>
 		
 		<!-- SETTING ATTRIBUTES -->

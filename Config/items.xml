@@ -17,7 +17,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mmetal_weak"/>
+			<property name="Material" value="Mnutsbolts"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="25"/> 
 			<property name="EconomicBundleSize" value="10"/>
@@ -241,7 +241,7 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mplastics"/>
+			<property name="Material" value="MplasticGOI"/>
 			<property name="Stacknumber" value="500"/>
 			<property name="EconomicValue" value="30"/>
 			<property name="EconomicBundleSize" value="25"/>
@@ -250,7 +250,7 @@
 			<property name="RepairAmount" value="100"/>
 		</item>
 	</append>
-	<!-- sets the name of the gold nugget. -->
-	<setattribute xpath="items/item[@name='resourceGoldNugget']" name="value">DescGoldOre</setattribute>
+	<!-- Chnange the Material to 'Mgold' -->
+	<setattribute xpath="/items/item[@name='resourceDoorKnob']/property[@name='Material']" name="value">Mgold</setattribute>
 </configs>
 
